@@ -7,7 +7,7 @@ const postTask = async (req: Request, res: Response): Promise<Response> => {
 
     const newTask = await TodoListModel.create({
       task,
-      status,
+      status: false,
       description,
     });
 

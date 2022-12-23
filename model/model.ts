@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 interface todoList {
   task: string;
-  status: string;
+  status: boolean;
   description: string;
 }
 
@@ -12,7 +12,7 @@ const todoListSchema = new mongoose.Schema(
   {
     task: String,
 
-    status: String,
+    status: Boolean,
     description: String,
   },
   { timestamps: true }
